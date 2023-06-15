@@ -14,7 +14,7 @@ phases:
     commands:
       # Discover and run unit tests in the 'tests' directory
       - npm test
-      - TAG=$CODEBUILD_WEBHOOK_TRIGGER
+      - TAG=$(echo $CODEBUILD_WEBHOOK_TRIGGER | cut --complement -c 1-4)
       - echo $TAG
   post_build:
     commands:
