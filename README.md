@@ -6,7 +6,7 @@ deployed by AWS CodeDeploy and AWS CloudFormation to an Amazon EC2 instance.
 
 What's Here
 -----------
-----
+
 
 This sample includes:
 
